@@ -1,0 +1,21 @@
+Final Sarcasm Task Size: 4850
+Final Sentiment Task Size: 45558
+Processed files saved to data/processed/
+
+Running Combined Model | Lambda: 0.2 | Default Hyperparameter
+============================================================
+Seed   7 | Val F1: 0.7546 | Test F1: 0.7099 | Gold F1: 0.7687
+Seed  42 | Val F1: 0.7557 | Test F1: 0.7158 | Gold F1: 0.6830
+Seed 100 | Val F1: 0.7553 | Test F1: 0.7155 | Gold F1: 0.7215
+
+Running Combined Model | Lambda: 0.2 | Tuned Hyperparameter
+============================================================
+Seed   7 | Val F1: 0.7606 | Test F1: 0.7157 | Gold F1: 0.6313
+Seed  42 | Val F1: 0.7595 | Test F1: 0.7207 | Gold F1: 0.6579
+Seed 100 | Val F1: 0.7572 | Test F1: 0.7131 | Gold F1: 0.5646
+
+================================================================================
+FINAL COMBINED REPORT SUMMARY
+================================================================================
+Default: Val F1: 0.7552 (±0.0005) | Test F1: 0.7137 (±0.0027) | Gold F1: 0.7244 (±0.0350) | Val Acc: 0.7663 (±0.0008) | Test Acc: 0.7127 (±0.0028) | Gold Acc: 0.7248 (±0.0333)
+Tuned: Val F1: 0.7591 (±0.0014) | Test F1: 0.7165 (±0.0031) | Gold F1: 0.6179 (±0.0392) | Val Acc: 0.7710 (±0.0011) | Test Acc: 0.7144 (±0.0039) | Gold Acc: 0.6318 (±0.0290)

@@ -1,0 +1,21 @@
+Final Sarcasm Task Size: 4850
+Final Sentiment Task Size: 45558
+Processed files saved to data/processed/
+
+Running MTL | Lambda: 0.2 | Default Hyperparameter
+==================================================
+Seed   7 | Val F1: 0.7574 | Test F1: 0.7184 | Gold F1: 0.6534
+Seed  42 | Val F1: 0.7575 | Test F1: 0.7132 | Gold F1: 0.6425
+Seed 100 | Val F1: 0.7557 | Test F1: 0.7117 | Gold F1: 0.6375
+
+Running MTL | Lambda: 0.2 | Tuned Hyperparameter
+==================================================
+Seed   7 | Val F1: 0.7580 | Test F1: 0.7125 | Gold F1: 0.6654
+Seed  42 | Val F1: 0.7645 | Test F1: 0.7185 | Gold F1: 0.6230
+Seed 100 | Val F1: 0.7592 | Test F1: 0.7164 | Gold F1: 0.6402
+
+================================================================================
+FINAL MTL REPORT SUMMARY
+================================================================================
+Default: Val F1: 0.7569 (±0.0008) | Test F1: 0.7145 (±0.0029) | Gold F1: 0.6445 (±0.0067) | Val Acc: 0.7683 (±0.0009) | Test Acc: 0.7136 (±0.0031) | Gold Acc: 0.6512 (±0.0000)
+Tuned: Val F1: 0.7605 (±0.0028) | Test F1: 0.7158 (±0.0025) | Gold F1: 0.6429 (±0.0174) | Val Acc: 0.7718 (±0.0033) | Test Acc: 0.7143 (±0.0027) | Gold Acc: 0.6473 (±0.0110)

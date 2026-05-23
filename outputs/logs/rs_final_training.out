@@ -1,0 +1,22 @@
+Final Sarcasm Task Size: 4850
+Final Sentiment Task Size: 45558
+Processed files saved to data/processed/
+
+Running RS | Lambda: 0.1 | Default Hyperparameter
+==================================================
+Seed   7 | Val F1: 0.7575 | Test F1: 0.7164 | Gold F1: 0.6943
+Seed  42 | Val F1: 0.7568 | Test F1: 0.7108 | Gold F1: 0.7129
+Seed 100 | Val F1: 0.7554 | Test F1: 0.7193 | Gold F1: 0.6446
+
+Running RS | Lambda: 0.1 | Tuned Hyperparameter
+==================================================
+Seed   7 | Val F1: 0.7597 | Test F1: 0.7205 | Gold F1: 0.6721
+Seed  42 | Val F1: 0.7598 | Test F1: 0.7191 | Gold F1: 0.6579  
+Seed 100 | Val F1: 0.7591 | Test F1: 0.7239 | Gold F1: 0.6690                                                              
+
+
+================================================================================
+FINAL RS REPORT SUMMARY
+================================================================================
+Default | Lambda: 0.1: Val F1: 0.7566 (±0.0009) | Test F1: 0.7186 (±0.0056) | Gold F1: 0.7010 (±0.0075) | Val Acc: 0.7680 (±0.0010) | Test Acc: 0.7193 (±0.0067) | Gold Acc: 0.7054 (±0.0055)
+Tuned | Lambda: 0.1: Val F1: 0.7596 (±0.0003) | Test F1: 0.7212 (±0.0020) | Gold F1: 0.6663 (±0.0061) | Val Acc: 0.7720 (±0.0014) | Test Acc: 0.7200 (±0.0024) | Gold Acc: 0.6705 (±0.0055)

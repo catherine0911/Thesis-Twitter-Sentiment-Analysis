@@ -1,0 +1,22 @@
+Final Sarcasm Task Size: 4850
+Final Sentiment Task Size: 45558
+Processed files saved to data/processed/
+  Seed 7 | Epoch 1 | Val F1: 0.7598
+  Seed 7 | Epoch 2 | Val F1: 0.7543
+  Seed 7 | Epoch 3 | Val F1: 0.7533
+  Seed 7 | Test F1: 0.7181 | Gold F1: 0.5126
+  Seed 42 | Epoch 1 | Val F1: 0.7496
+  Seed 42 | Epoch 2 | Val F1: 0.7535
+  Seed 42 | Epoch 3 | Val F1: 0.7594
+  Seed 42 | Test F1: 0.7162 | Gold F1: 0.5690
+  Seed 100 | Epoch 1 | Val F1: 0.7531
+  Seed 100 | Epoch 2 | Val F1: 0.7567
+  Seed 100 | Epoch 3 | Val F1: 0.7559
+  Seed 100 | Test F1: 0.7211 | Gold F1: 0.5878
+
+
+============================================================
+BASELINE SUMMARY
+============================================================
+Test F1: 0.7185 (±0.0020)
+Gold F1: 0.5565 (±0.0320)

@@ -1,0 +1,4 @@
+Final Sarcasm Task Size: 4850
+Final Sentiment Task Size: 45558
+
+Optimization Finished. Best Params: {'learning_rate': 1.0288697955632524e-05, 'dropout_prob': 0.15000000000000002, 'warmup_ratio': 0.15000000000000002}

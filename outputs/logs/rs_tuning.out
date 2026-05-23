@@ -1,0 +1,3 @@
+Final Sarcasm Task Size: 4850
+Final Sentiment Task Size: 45558
+Best Val F1: 0.7627 | Best Params: {'learning_rate': 7.902120558097247e-06, 'dropout_prob': 0.2, 'warmup_ratio': 0.15}

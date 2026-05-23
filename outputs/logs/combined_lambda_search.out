@@ -1,0 +1,45 @@
+Final Sarcasm Task Size: 4850
+Final Sentiment Task Size: 45558
+Processed files saved to data/processed/
+Running Combined Lambda Search with DEFAULT hyperparameters
+
+Running Combined Model | Lambda: 0.1 | Lambda Search
+============================================================
+Seed   7 | Val F1: 0.7549
+Seed  42 | Val F1: 0.7554
+Seed 100 | Val F1: 0.7583
+
+Running Combined Model | Lambda: 0.15 | Lambda Search
+============================================================
+Seed   7 | Val F1: 0.7542
+Seed  42 | Val F1: 0.7574
+Seed 100 | Val F1: 0.7582
+
+Running Combined Model | Lambda: 0.2 | Lambda Search
+============================================================
+Seed   7 | Val F1: 0.7546
+Seed  42 | Val F1: 0.7557
+Seed 100 | Val F1: 0.7553
+
+Running Combined Model | Lambda: 0.25 | Lambda Search
+============================================================
+Seed   7 | Val F1: 0.7537
+Seed  42 | Val F1: 0.7557
+Seed 100 | Val F1: 0.7591
+
+Running Combined Model | Lambda: 0.3 | Lambda Search
+============================================================
+Seed   7 | Val F1: 0.7543
+Seed  42 | Val F1: 0.7559
+Seed 100 | Val F1: 0.7589
+
+================================================================================
+FINAL COMBINED LAMBDA SEARCH SUMMARY
+================================================================================
+Lambda: 0.1 | Val F1: 0.7562 (±0.0015) | Gold F1: 0.7123 (±0.0256) | Score: 0.7299 (±0.0154)
+Lambda: 0.15 | Val F1: 0.7566 (±0.0017) | Gold F1: 0.7210 (±0.0315) | Score: 0.7352 (±0.0185)
+Lambda: 0.2 | Val F1: 0.7552 (±0.0005) | Gold F1: 0.7244 (±0.0350) | Score: 0.7367 (±0.0208)
+Lambda: 0.25 | Val F1: 0.7562 (±0.0022) | Gold F1: 0.7056 (±0.0465) | Score: 0.7258 (±0.0278)
+Lambda: 0.3 | Val F1: 0.7564 (±0.0019) | Gold F1: 0.7109 (±0.0521) | Score: 0.7291 (±0.0311)
+
+Suggested Lambda: 0.2 (0.4 * Val F1 + 0.6 * Gold F1 = 0.7367)

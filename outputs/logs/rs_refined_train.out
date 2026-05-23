@@ -1,0 +1,28 @@
+Final Sarcasm Task Size: 4850
+Final Sentiment Task Size: 45558
+Processed files saved to data\processed/
+
+Running RS | Lambda: 0.1 | Refined Hyperparameter
+==================================================
+Seed   7 | Val F1: 0.7570 | Test F1: 0.7182 | Gold F1: 0.7109   
+Seed  42 | Val F1: 0.7564 | Test F1: 0.7162 | Gold F1: 0.6943                                
+Seed 100 | Val F1: 0.7552 | Test F1: 0.7264 | Gold F1: 0.6641                                
+
+Running RS | Lambda: 0.15 | Refined Hyperparameter
+==================================================                             
+Seed   7 | Val F1: 0.7582 | Test F1: 0.7168 | Gold F1: 0.7109 
+Seed  42 | Val F1: 0.7595 | Test F1: 0.7158 | Gold F1: 0.6864                                
+Seed 100 | Val F1: 0.7543 | Test F1: 0.7175 | Gold F1: 0.6446                                
+
+Running RS | Lambda: 0.2 | Refined Hyperparameter
+==================================================
+Seed   7 | Val F1: 0.7549 | Test F1: 0.7188 | Gold F1: 0.7109                                
+Seed  42 | Val F1: 0.7597 | Test F1: 0.7167 | Gold F1: 0.6814                                
+Seed 100 | Val F1: 0.7565 | Test F1: 0.7271 | Gold F1: 0.6641                                
+
+================================================================================
+FINAL RS REPORT SUMMARY
+================================================================================
+Refined | Lambda: 0.1: Val F1: 0.7562 (±0.0008) | Test F1: 0.7202 (±0.0044) | Gold F1: 0.6898 (±0.0193) | Val Acc: 0.7672 (±0.0012) | Test Acc: 0.7210 (±0.0053) | Gold Acc: 0.6977 (±0.0095)
+Refined | Lambda: 0.15: Val F1: 0.7573 (±0.0022) | Test F1: 0.7167 (±0.0007) | Gold F1: 0.6806 (±0.0274) | Val Acc: 0.7697 (±0.0009) | Test Acc: 0.7171 (±0.0010) | Gold Acc: 0.6822 (±0.0239)
+Refined | Lambda: 0.2: Val F1: 0.7571 (±0.0020) | Test F1: 0.7209 (±0.0045) | Gold F1: 0.6855 (±0.0193) | Val Acc: 0.7678 (±0.0022) | Test Acc: 0.7217 (±0.0055) | Gold Acc: 0.6938 (±0.0110)

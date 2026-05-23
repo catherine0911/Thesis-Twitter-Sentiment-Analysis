@@ -1,0 +1,12 @@
+Loading Data for Optuna...
+Leakage Removal: Dropped 57 rows.
+Processed files saved to data/processed/
+
+==================================================
+ OPTUNA TUNING COMPLETE
+==================================================
+Best Validation F1: 0.7623
+Best Parameters:
+  learning_rate: 8.461228954824954e-06
+  dropout_prob: 0.15000000000000002
+  warmup_ratio: 0.05
