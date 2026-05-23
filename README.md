@@ -32,10 +32,10 @@ Thesis-Twitter-Sentiment-Analysis/
 ├─ data/
 │  ├─ raw/                # Original TweetEval and iSarcasm datasets
 │  ├─ processed/          # Processed and rationale-augmented datasets
-│  └─ batch_api_calls/    # JSONL files for LLM rationale generation
+│  └─ batch_api_calls/    # JSONL files input and output files for LLM rationale generation
 │
 ├─ models/                # Saved model checkpoints (.pt)
-├─ notebooks/             # EDA, error analysis, and pilot experiments
+├─ notebooks/             # EDA, error analysis, bootstrap test and pilot experiments
 ├─ outputs/               # Predictions, figures, logs, and evaluation results
 │
 ├─ src/
@@ -44,11 +44,11 @@ Thesis-Twitter-Sentiment-Analysis/
 │  ├─ rs_model.py         # Rationale-supervised RoBERTa (2 heads: sentiment + rationale)
 │  ├─ combined_model.py   # Combined model (3 heads: sentiment + sarcasm + rationale)
 │  │
-│  ├─ config.py           # Hyperparameters, loss weights, paths, and API keys
-│  ├─ preprocessing.py    # Data cleaning and preprocessing pipeline
-│  ├─ data_loader.py      # Loads tweets, labels, and rationale embeddings
-│  ├─ evaluation.py       # Evaluation metrics and reporting functions
-│  └─ utils.py            # Helper functions and masked loss implementation
+│  ├─ config.py           # Global Config
+│  ├─ preprocessing.py    # Preprocessing functions
+│  ├─ data_loader.py      # Data loader, tokenization functions
+│  ├─ evaluation.py       # Evaluation functions
+│  └─ utils.py            # Helper functions
 │
 ├─ run_baseline.py        # Train and evaluate Baseline model
 ├─ run_mtl.py             # Train and evaluate MTL model
@@ -59,7 +59,7 @@ Thesis-Twitter-Sentiment-Analysis/
 ├─ run_rs_tuning.py       # Hyperparameter tuning for RS
 ├─ run_combined_tuning.py # Hyperparameter tuning for Combined
 │
-├─ generate_rationales.py # Generate input files for Batch OpenAI API
+├─ generate_rationales.py # Generate input files for Batch OpenAI API and process output files into csv
 │
 ├─ README.md
 └─ requirements.txt
@@ -73,7 +73,7 @@ Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/catherine0911/Thesis-Twitter-Sentiment-Analysis.git
-cd Thesis
+cd Thesis-Twitter-Sentiment-Analysis
 pip install -r requirements.txt
 ```
 
@@ -102,11 +102,11 @@ python run_combined_tuning.py
 ## Main Results
 
 | Model | Test F1 | Gold F1 (OOD) |
-|---|---|---|
-| Baseline | 0.7192 ± 0.0031 | 0.5848 ± 0.0304 |
-| MTL | 0.7158 ± 0.0025 | 0.6429 ± 0.0174 |
-| RS | 0.7186 ± 0.0057 | 0.7010 ± 0.0075 |
-| Combined | 0.7165 ± 0.0031 | **0.7244 ± 0.0350** |
+|---|---:|---:|
+| Baseline | 0.7185 ± 0.0025 | 0.5565 ± 0.0391 |
+| MTL | 0.7158 ± 0.0030 | 0.6429 ± 0.0213 |
+| RS | 0.7186 ± 0.0069 | 0.7010 ± 0.0092 |
+| Combined | 0.7137 ± 0.0033 | **0.7244 ± 0.0429** |
 
 The results show that rationale supervision improves robustness on sarcastic tweets substantially, while the Combined model achieves the best overall OOD performance.
 
