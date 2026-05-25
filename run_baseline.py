@@ -115,5 +115,5 @@ if __name__ == '__main__':
     print('\n' + '='*60)
     print('BASELINE SUMMARY')
     print('='*60)
-    print(f'Test F1: {np.mean(test_f1s):.4f} (±{np.std(test_f1s):.4f})')
-    print(f'Gold F1: {np.mean(gold_f1s):.4f} (±{np.std(gold_f1s):.4f})')
+    print(f'Test F1: {np.mean(test_f1s):.4f} (±{np.std(test_f1s, ddof=1):.4f})')
+    print(f'Gold F1: {np.mean(gold_f1s):.4f} (±{np.std(gold_f1s, ddof=1):.4f})')

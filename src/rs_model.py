@@ -12,7 +12,7 @@ class RationaleSupervisedRoberta(nn.Module):
             model_name: The HF model path/name.
             config: AutoConfig object.
             dropout_prob: Dropout probability for heads.
-            rationale_dim: Output dimension for rationale embeddings (384 for ).
+            rationale_dim: Output dimension for rationale embeddings (384 for MiniLM).
         """
         super(RationaleSupervisedRoberta, self).__init__()
         

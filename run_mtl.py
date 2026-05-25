@@ -238,10 +238,9 @@ def run_lambda_search(dataframes):
     for lam in active_lambdas:
         res = results[lam]
 
-        avg_vf1, std_vf1 = np.mean(res['val_f1']), np.std(res['val_f1'])
-        avg_gf1, std_gf1 = np.mean(res['gold_f1']), np.std(res['gold_f1'])
-        avg_score, std_score = np.mean(res['score']), np.std(res['score'])
-
+        avg_vf1, std_vf1 = np.mean(res['val_f1']), np.std(res['val_f1'], ddof=1)
+        avg_gf1, std_gf1 = np.mean(res['gold_f1']), np.std(res['gold_f1'], ddof=1)
+        avg_score, std_score = np.mean(res['score']), np.std(res['score'], ddof=1)
         lambda_scores[lam] = avg_score
 
         print(
@@ -304,12 +303,12 @@ def run_final_default_vs_tuned(dataframes):
     for config_name, res in all_results.items():
         print(
             f"{config_name}: "
-            f"Val F1: {np.mean(res['val_f1']):.4f} (±{np.std(res['val_f1']):.4f}) | "
-            f"Test F1: {np.mean(res['test_f1']):.4f} (±{np.std(res['test_f1']):.4f}) | "
-            f"Gold F1: {np.mean(res['gold_f1']):.4f} (±{np.std(res['gold_f1']):.4f}) | "
-            f"Val Acc: {np.mean(res['val_acc']):.4f} (±{np.std(res['val_acc']):.4f}) | "
-            f"Test Acc: {np.mean(res['test_acc']):.4f} (±{np.std(res['test_acc']):.4f}) | "
-            f"Gold Acc: {np.mean(res['gold_acc']):.4f} (±{np.std(res['gold_acc']):.4f})"
+            f"Val F1: {np.mean(res['val_f1']):.4f} (±{np.std(res['val_f1'], ddof=1):.4f}) | "
+            f"Test F1: {np.mean(res['test_f1']):.4f} (±{np.std(res['test_f1'], ddof=1):.4f}) | "
+            f"Gold F1: {np.mean(res['gold_f1']):.4f} (±{np.std(res['gold_f1'], ddof=1):.4f}) | "
+            f"Val Acc: {np.mean(res['val_acc']):.4f} (±{np.std(res['val_acc'], ddof=1):.4f}) | "
+            f"Test Acc: {np.mean(res['test_acc']):.4f} (±{np.std(res['test_acc'], ddof=1):.4f}) | "
+            f"Gold Acc: {np.mean(res['gold_acc']):.4f} (±{np.std(res['gold_acc'], ddof=1):.4f})"
         )
 
 
