@@ -4,7 +4,7 @@ Author: Thu Pham
 
 This is the repository for Master Thesis project on improving Twitter sentiment analysis robustness on sarcastic tweets using Multi-Task Learning (MTL) and Rationale Supervision (RS).
 
-The thesis compares several RoBERTa-based architectures trained on TweetEval and evaluated both on the standard test set and a sarcasm-heavy out-of-distribution (OOD) golden set.
+The thesis compares several RoBERTa-based architectures trained on TweetEval and evaluated both on the standard test set and a sarcasm-heavy out-of-distribution (OOD) golden set. This thesis achieved 8.5 as the final grade.
 
 ---
 
